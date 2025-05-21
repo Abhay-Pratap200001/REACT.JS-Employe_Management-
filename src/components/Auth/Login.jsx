@@ -1,17 +1,14 @@
 import {React, useState} from 'react'
 
 const Login = ({handleLogin}) => {
-
      const [email, setEmail] = useState('')
      const [password, setPassword] = useState('')
 
-     //submitHandler component
-     const submitHandler = (e) =>{
-       e.preventDefault()
-       handleLogin(email,password)
-       setEmail("")
-       setPassword("")
-         
+      const submitHandler = (e) =>{
+      e.preventDefault()
+      handleLogin(email,password)
+      setEmail("")
+      setPassword("")
     }
 
  return (
@@ -23,25 +20,21 @@ const Login = ({handleLogin}) => {
             submitHandler(e)
          }}
          className='flex flex-col items-center justify-center'>
-        
-            <input
+           <input
             value={email}
             onChange={(e)=>{   
-              setEmail(e.target.value)           
-            }}
+            setEmail(e.target.value)
+          }}
+
              required
-             className='outline-none bg-transparent border-2 border-emerald-600 text-xl py-3 px-5 rounded-full placeholder:text-gray-400' type="email" placeholder='Enter you email' 
-             />
-                
+             className='outline-none bg-transparent border-2 border-emerald-600 text-xl py-3 px-5 rounded-full placeholder:text-gray-400' type="email" placeholder='Enter you email'/>
             <input 
             value={password}
             onChange={(e) =>{
               setPassword(e.target.value)
             }}
             required 
-            className='outline-none bg-transparent border-2 border-emerald-600 text-xl py-3 px-5 rounded-full placeholder:text-gray-400 mt-3' type="password" placeholder='Enter password'
-            />
-            
+            className='outline-none bg-transparent border-2 border-emerald-600 text-xl py-3 px-5 rounded-full placeholder:text-gray-400 mt-3' type="password" placeholder='Enter password'/>
             <button className=' mt-5 outline-none border-none bg-emerald-600 text-xl py-3 px-5 rounded-full placeholder:text-gray-400'>Log-in</button>
          </form>
       </div>
