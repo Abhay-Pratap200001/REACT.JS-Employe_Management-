@@ -2,21 +2,29 @@
 
 *{
   font-family: gilroy;
-  color: #fff;
+  /* color: #fff; */
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
   font-family: "Open Sans", sans-serif;
 
 }
-/* html,body{
-  height: 100%;
-  width: 100%;
-} */
 
 body{
   background-color: black;
-  
 }
 
-#tasklist::-webkit-scrollbar{
-display: none;
+
+@keyframes rotate360 {
+  0% {
+    transform: perspective(800px) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(800px) rotateY(180deg);
+  }
+  100% {
+    transform: perspective(800px) rotateY(360deg);
+  }
+}
+
+.animate-rotate360 {
+  animation: rotate360 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
