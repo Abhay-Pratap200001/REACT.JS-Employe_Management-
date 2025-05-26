@@ -182,7 +182,7 @@ const Login = ({ handleLogin }) => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className='text-black outline-none bg-emerald-50 border-2 border-emerald-500 focus:ring-2 focus:ring-emerald-400 text-lg py-4 px-6 rounded-lg placeholder:text-gray-500 transition duration-200'
+            className='text-black outline-none bg-gray-400 border-2 border-gray-800 focus:ring-2 focus:ring-black-400 text-lg py-4 px-6 rounded-lg placeholder:text-gray-50 transition duration-200'
             type="email"
             placeholder='Enter your email'
           />
@@ -190,7 +190,7 @@ const Login = ({ handleLogin }) => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            className='text-black outline-none bg-emerald-50 border-2 border-emerald-500 focus:ring-2 focus:ring-emerald-400 text-lg py-4 px-6 rounded-lg placeholder:text-gray-500 transition duration-200'
+            className='text-black outline-none  bg-gray-400 border-2 border-gray-800 focus:ring-2 focus:ring-black-400 text-lg py-4 px-6 rounded-lg placeholder:text-gray-50 transition duration-200'
             type="password"
             placeholder='Enter your password'
           />

@@ -14,7 +14,7 @@
 
    const submitHandler = (e) =>{
     e.preventDefault()
-    setNewTask({taskTitle,taskDescription,taskeDate,category,active:false,newTask:true,failed:false,comleted:false})
+    setNewTask({taskTitle,taskDescription,taskeDate,category,active:false,newTask:true,failed:false,completed:false})
     const data = userData
   
     data.forEach(function(elem){
